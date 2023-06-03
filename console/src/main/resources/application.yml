@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://sh-cdb-ie4q4zii.sql.tencentcdb.com:63667/test?useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456aA
+  jackson:
+    default-property-inclusion: non_null
+  main:
+    allow-circular-references: true
+urule:
+  repository:
+    databasetype: mysql
+    datasourcename: datasource
+
+server:
+  port: 8787
