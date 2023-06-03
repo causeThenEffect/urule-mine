@@ -22,6 +22,7 @@ import java.util.Map;
  */
 @RestController
 public class RuleController {
+
     @RequestMapping("rule")
     public String rule(@RequestParam String time, @RequestParam String price) throws IOException {
         //创建一个KnowledgeSession对象
@@ -36,4 +37,5 @@ public class RuleController {
 
         return String.valueOf(session.getParameter("commission"));
     }
+
 }
