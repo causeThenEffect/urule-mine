@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -23,10 +24,13 @@ import java.util.Map;
 @RestController
 public class RuleController {
 
+    @Resource(name = "urule.knowledgeService")
+    KnowledgeService knowledgeService;
+
     @RequestMapping("rule")
     public String rule(@RequestParam String time, @RequestParam String price) throws IOException {
         //创建一个KnowledgeSession对象
-        KnowledgeService knowledgeService = (KnowledgeService) Utils.getApplicationContext().getBean(KnowledgeService.BEAN_ID);
+//        KnowledgeService knowledgeService = (KnowledgeService) Utils.getApplicationContext().getBean(KnowledgeService.BEAN_ID);
         KnowledgePackage knowledgePackage = knowledgeService.getKnowledge("test/13");
         KnowledgeSession session = KnowledgeSessionFactory.newKnowledgeSession(knowledgePackage);
 
