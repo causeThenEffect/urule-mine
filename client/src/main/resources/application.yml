@@ -1,6 +1,7 @@
 urule:
-  resporityServerUrl: http://localhost:8787
+  resporityServerUrl: http://localhost:8787/demo/
   knowledgeUpdateCycle: 0
+  debug: true
 
 server:
   port: 7878
