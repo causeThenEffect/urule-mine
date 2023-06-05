@@ -1,5 +1,5 @@
 urule:
-  resporityServerUrl: http://localhost:8787/demo/
+  resporityServerUrl: http://localhost:8787/
   knowledgeUpdateCycle: 0
   debug: true
 
