@@ -1,9 +1,9 @@
 spring:
   datasource:
-    url: jdbc:mysql://sh-cdb-dd5fr2w4.sql.tencentcdb.com:63654/test?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://sh-cdb-9bbudzpo.sql.tencentcdb.com:63684/test?useUnicode=true&characterEncoding=utf-8
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: 123456aA@
+    password: 12345678aA@
   jackson:
     default-property-inclusion: non_null
   main:
